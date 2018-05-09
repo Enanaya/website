@@ -1,0 +1,652 @@
+2018-04-18 14:01:33 Error: [Cake\Core\Exception\MissingPluginException] Plugin FullCalendar could not be found. in /applications/mamp/htdocs/pms/vendor/cakephp/cakephp/src/Core/Plugin.php on line 149
+Exception Attributes: array (
+  'plugin' => 'FullCalendar',
+)
+Stack Trace:
+#0 /applications/mamp/htdocs/pms/config/bootstrap.php(217): Cake\Core\Plugin::load('FullCalendar')
+#1 /applications/mamp/htdocs/pms/vendor/cakephp/cakephp/src/Http/BaseApplication.php(60): require_once('/applications/m...')
+#2 /applications/mamp/htdocs/pms/vendor/cakephp/cakephp/src/Console/CommandRunner.php(114): Cake\Http\BaseApplication->bootstrap()
+#3 /applications/mamp/htdocs/pms/bin/cake.php(12): Cake\Console\CommandRunner->run(Array)
+#4 {main}
+
+
+2018-05-02 11:24:27 Error: [UnexpectedValueException] Referenced fixture class "App\Test\Fixture\AdminFixture" not found. Fixture "app.admin" was referenced in test case "App\Test\TestCase\Controller\AdminControllerTest". in /Applications/MAMP/htdocs/pms/website/vendor/cakephp/cakephp/src/TestSuite/Fixture/FixtureManager.php on line 229
+Stack Trace:
+#0 /Applications/MAMP/htdocs/pms/website/vendor/cakephp/cakephp/src/TestSuite/Fixture/FixtureManager.php(104): Cake\TestSuite\Fixture\FixtureManager->_loadFixtures(Object(App\Test\TestCase\Controller\AdminControllerTest))
+#1 /Applications/MAMP/htdocs/pms/website/vendor/cakephp/cakephp/src/TestSuite/Fixture/FixtureInjector.php(97): Cake\TestSuite\Fixture\FixtureManager->fixturize(Object(App\Test\TestCase\Controller\AdminControllerTest))
+#2 /Applications/MAMP/htdocs/pms/website/vendor/phpunit/phpunit/src/Framework/TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Controller\AdminControllerTest))
+#3 /Applications/MAMP/htdocs/pms/website/vendor/phpunit/phpunit/src/Framework/TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Controller\AdminControllerTest))
+#4 /Applications/MAMP/htdocs/pms/website/vendor/phpunit/phpunit/src/Framework/TestCase.php(895): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\AdminControllerTest))
+#5 /Applications/MAMP/htdocs/pms/website/vendor/phpunit/phpunit/src/Framework/TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#6 /Applications/MAMP/htdocs/pms/website/vendor/phpunit/phpunit/src/Framework/TestSuite.php(755): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#7 /Applications/MAMP/htdocs/pms/website/vendor/phpunit/phpunit/src/TextUI/TestRunner.php(546): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#8 /Applications/MAMP/htdocs/pms/website/vendor/phpunit/phpunit/src/TextUI/Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#9 /Applications/MAMP/htdocs/pms/website/vendor/phpunit/phpunit/src/TextUI/Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#10 /Applications/MAMP/htdocs/pms/website/vendor/phpunit/phpunit/phpunit(53): PHPUnit\TextUI\Command::main()
+#11 {main}
+
+
+2018-05-02 11:24:43 Error: Fixture creation for "teams_users" failed "SQLSTATE[HY000]: General error: 1 index user_id already exists"
+2018-05-02 11:24:43 Warning: Warning (512): Fixture creation for "teams_users" failed "SQLSTATE[HY000]: General error: 1 index user_id already exists" in [/Applications/MAMP/htdocs/pms/website/vendor/cakephp/cakephp/src/TestSuite/Fixture/TestFixture.php, line 307]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\TestSuite\Fixture\TestFixture::create() - CORE/src/TestSuite/Fixture/TestFixture.php, line 307
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 261
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 380
+Cake\Database\Connection::disableConstraints() - CORE/src/Database/Connection.php, line 730
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 381
+Cake\Database\Connection::transactional() - CORE/src/Database/Connection.php, line 682
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 382
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 333
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE/src/TestSuite/Fixture/FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 895
+PHPUnit\Framework\TestSuite::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 546
+PHPUnit\TextUI\Command::run() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 148
+[main] - ROOT/vendor/phpunit/phpunit/phpunit, line 53
+
+
+
+2018-05-02 11:25:46 Error: Fixture creation for "teams_users" failed "SQLSTATE[HY000]: General error: 1 index user_id already exists"
+2018-05-02 11:25:46 Warning: Warning (512): Fixture creation for "teams_users" failed "SQLSTATE[HY000]: General error: 1 index user_id already exists" in [/Applications/MAMP/htdocs/pms/website/vendor/cakephp/cakephp/src/TestSuite/Fixture/TestFixture.php, line 307]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\TestSuite\Fixture\TestFixture::create() - CORE/src/TestSuite/Fixture/TestFixture.php, line 307
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 261
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 380
+Cake\Database\Connection::disableConstraints() - CORE/src/Database/Connection.php, line 730
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 381
+Cake\Database\Connection::transactional() - CORE/src/Database/Connection.php, line 682
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 382
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 333
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE/src/TestSuite/Fixture/FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 895
+PHPUnit\Framework\TestSuite::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 546
+PHPUnit\TextUI\Command::run() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 148
+[main] - ROOT/vendor/phpunit/phpunit/phpunit, line 53
+
+
+
+2018-05-02 11:26:41 Error: Fixture creation for "teams_users" failed "SQLSTATE[HY000]: General error: 1 index user_id already exists"
+2018-05-02 11:26:41 Warning: Warning (512): Fixture creation for "teams_users" failed "SQLSTATE[HY000]: General error: 1 index user_id already exists" in [/Applications/MAMP/htdocs/pms/website/vendor/cakephp/cakephp/src/TestSuite/Fixture/TestFixture.php, line 307]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\TestSuite\Fixture\TestFixture::create() - CORE/src/TestSuite/Fixture/TestFixture.php, line 307
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 261
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 380
+Cake\Database\Connection::disableConstraints() - CORE/src/Database/Connection.php, line 730
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 381
+Cake\Database\Connection::transactional() - CORE/src/Database/Connection.php, line 682
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 382
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 333
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE/src/TestSuite/Fixture/FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 895
+PHPUnit\Framework\TestSuite::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 546
+PHPUnit\TextUI\Command::run() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 148
+[main] - ROOT/vendor/phpunit/phpunit/phpunit, line 53
+
+
+
+2018-05-02 11:33:26 Error: Fixture creation for "teams_users" failed "SQLSTATE[HY000]: General error: 1 index user_id already exists"
+2018-05-02 11:33:26 Warning: Warning (512): Fixture creation for "teams_users" failed "SQLSTATE[HY000]: General error: 1 index user_id already exists" in [/Applications/MAMP/htdocs/pms/website/vendor/cakephp/cakephp/src/TestSuite/Fixture/TestFixture.php, line 307]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\TestSuite\Fixture\TestFixture::create() - CORE/src/TestSuite/Fixture/TestFixture.php, line 307
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 261
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 380
+Cake\Database\Connection::disableConstraints() - CORE/src/Database/Connection.php, line 730
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 381
+Cake\Database\Connection::transactional() - CORE/src/Database/Connection.php, line 682
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 382
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 333
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE/src/TestSuite/Fixture/FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 895
+PHPUnit\Framework\TestSuite::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 546
+PHPUnit\TextUI\Command::run() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 148
+[main] - ROOT/vendor/phpunit/phpunit/phpunit, line 53
+
+
+
+2018-05-02 11:35:02 Error: Fixture creation for "teams_users" failed "SQLSTATE[HY000]: General error: 1 index user_id already exists"
+2018-05-02 11:35:02 Warning: Warning (512): Fixture creation for "teams_users" failed "SQLSTATE[HY000]: General error: 1 index user_id already exists" in [/Applications/MAMP/htdocs/pms/website/vendor/cakephp/cakephp/src/TestSuite/Fixture/TestFixture.php, line 307]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\TestSuite\Fixture\TestFixture::create() - CORE/src/TestSuite/Fixture/TestFixture.php, line 307
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 261
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 380
+Cake\Database\Connection::disableConstraints() - CORE/src/Database/Connection.php, line 730
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 381
+Cake\Database\Connection::transactional() - CORE/src/Database/Connection.php, line 682
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 382
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 333
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE/src/TestSuite/Fixture/FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 895
+PHPUnit\Framework\TestSuite::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 546
+PHPUnit\TextUI\Command::run() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 148
+[main] - ROOT/vendor/phpunit/phpunit/phpunit, line 53
+
+
+
+2018-05-02 11:40:00 Error: Fixture creation for "teams_users" failed "SQLSTATE[HY000]: General error: 1 index user_id already exists"
+2018-05-02 11:40:00 Warning: Warning (512): Fixture creation for "teams_users" failed "SQLSTATE[HY000]: General error: 1 index user_id already exists" in [/Applications/MAMP/htdocs/pms/website/vendor/cakephp/cakephp/src/TestSuite/Fixture/TestFixture.php, line 307]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 153
+Cake\TestSuite\Fixture\TestFixture::create() - CORE/src/TestSuite/Fixture/TestFixture.php, line 307
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 261
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 380
+Cake\Database\Connection::disableConstraints() - CORE/src/Database/Connection.php, line 730
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 381
+Cake\Database\Connection::transactional() - CORE/src/Database/Connection.php, line 682
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 382
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE/src/TestSuite/Fixture/FixtureManager.php, line 333
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE/src/TestSuite/Fixture/FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestCase.php, line 895
+PHPUnit\Framework\TestSuite::run() - ROOT/vendor/phpunit/phpunit/src/Framework/TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT/vendor/phpunit/phpunit/src/TextUI/TestRunner.php, line 546
+PHPUnit\TextUI\Command::run() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT/vendor/phpunit/phpunit/src/TextUI/Command.php, line 148
+[main] - ROOT/vendor/phpunit/phpunit/phpunit, line 53
+
+
+
+2018-05-02 14:19:36 Error: [UnexpectedValueException] Referenced fixture class "App\Test\Fixture\AdminFixture" not found. Fixture "app.admin" was referenced in test case "App\Test\TestCase\Controller\AdminControllerTest". in D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 229
+Stack Trace:
+#0 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(104): Cake\TestSuite\Fixture\FixtureManager->_loadFixtures(Object(App\Test\TestCase\Controller\AdminControllerTest))
+#1 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(97): Cake\TestSuite\Fixture\FixtureManager->fixturize(Object(App\Test\TestCase\Controller\AdminControllerTest))
+#2 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\Framework\TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Controller\AdminControllerTest))
+#3 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\Framework\TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Controller\AdminControllerTest))
+#4 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\AdminControllerTest))
+#5 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#6 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#7 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(546): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#8 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#9 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#10 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#11 {main}
+
+
+2018-05-02 14:19:44 Error: Fixture creation for "teams_users" failed "SQLSTATE[HY000]: General error: 1 index user_id already exists"
+2018-05-02 14:19:44 Warning: Warning (512): Fixture creation for "teams_users" failed "SQLSTATE[HY000]: General error: 1 index user_id already exists" in [D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 307]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 307
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 261
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 730
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 381
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 682
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 382
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 333
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 546
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-05-02 14:19:57 Error: Fixture creation for "teams_users" failed "SQLSTATE[HY000]: General error: 1 index user_id already exists"
+2018-05-02 14:19:57 Warning: Warning (512): Fixture creation for "teams_users" failed "SQLSTATE[HY000]: General error: 1 index user_id already exists" in [D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 307]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 307
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 261
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 730
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 381
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 682
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 382
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 333
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 546
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-05-02 14:21:36 Error: Fixture creation for "teams_users" failed "SQLSTATE[HY000]: General error: 1 index user_id already exists"
+2018-05-02 14:21:36 Warning: Warning (512): Fixture creation for "teams_users" failed "SQLSTATE[HY000]: General error: 1 index user_id already exists" in [D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 307]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 307
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 261
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 730
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 381
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 682
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 382
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 333
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 546
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-05-02 14:22:54 Error: Fixture creation for "teams_users" failed "SQLSTATE[HY000]: General error: 1 index user_id already exists"
+2018-05-02 14:22:54 Warning: Warning (512): Fixture creation for "teams_users" failed "SQLSTATE[HY000]: General error: 1 index user_id already exists" in [D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 307]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 307
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 261
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 730
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 381
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 682
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 382
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 333
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 546
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-05-02 20:43:00 Error: Fixture creation for "teams_users" failed "SQLSTATE[HY000]: General error: 1 index user_id already exists"
+2018-05-02 20:43:00 Warning: Warning (512): Fixture creation for "teams_users" failed "SQLSTATE[HY000]: General error: 1 index user_id already exists" in [D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 307]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 307
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 261
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 730
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 381
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 682
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 382
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 333
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 546
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-05-02 20:43:14 Error: Fixture creation for "teams_users" failed "SQLSTATE[HY000]: General error: 1 index user_id already exists"
+2018-05-02 20:43:14 Warning: Warning (512): Fixture creation for "teams_users" failed "SQLSTATE[HY000]: General error: 1 index user_id already exists" in [D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\TestSuite\Fixture\TestFixture.php, line 307]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 153
+Cake\TestSuite\Fixture\TestFixture::create() - CORE\src\TestSuite\Fixture\TestFixture.php, line 307
+Cake\TestSuite\Fixture\FixtureManager::_setupTable() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 261
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 313
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 380
+Cake\Database\Connection::disableConstraints() - CORE\src\Database\Connection.php, line 730
+Cake\TestSuite\Fixture\FixtureManager::Cake\TestSuite\Fixture\{closure}() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 381
+Cake\Database\Connection::transactional() - CORE\src\Database\Connection.php, line 682
+Cake\TestSuite\Fixture\FixtureManager::_runOperation() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 382
+Cake\TestSuite\Fixture\FixtureManager::load() - CORE\src\TestSuite\Fixture\FixtureManager.php, line 333
+Cake\TestSuite\Fixture\FixtureInjector::startTest() - CORE\src\TestSuite\Fixture\FixtureInjector.php, line 98
+PHPUnit\Framework\TestResult::startTest() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 395
+PHPUnit\Framework\TestResult::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestResult.php, line 637
+PHPUnit\Framework\TestCase::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestCase.php, line 894
+PHPUnit\Framework\TestSuite::run() - ROOT\vendor\phpunit\phpunit\src\Framework\TestSuite.php, line 755
+PHPUnit\TextUI\TestRunner::doRun() - ROOT\vendor\phpunit\phpunit\src\TextUI\TestRunner.php, line 546
+PHPUnit\TextUI\Command::run() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 195
+PHPUnit\TextUI\Command::main() - ROOT\vendor\phpunit\phpunit\src\TextUI\Command.php, line 148
+[main] - ROOT\vendor\phpunit\phpunit\phpunit, line 53
+
+
+
+2018-05-08 14:48:04 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Task could not be found.
+Exception Attributes: array (
+  'class' => 'Task',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /task
+Stack Trace:
+#0 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(97): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#13 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(485): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#14 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(373): Cake\TestSuite\IntegrationTestCase->_sendRequest('/task', 'GET')
+#15 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\tests\TestCase\Controller\TasksControllerTest.php(71): Cake\TestSuite\IntegrationTestCase->get('/task')
+#16 [internal function]: App\Test\TestCase\Controller\TasksControllerTest->testView()
+#17 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\TasksControllerTest), Array)
+#18 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#19 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#20 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\TasksControllerTest))
+#21 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#22 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(546): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#23 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#24 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#25 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#26 {main}
+
+
+2018-05-08 16:46:01 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Task could not be found.
+Exception Attributes: array (
+  'class' => 'Task',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /task
+Stack Trace:
+#0 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\TestSuite\MiddlewareDispatcher.php(97): Cake\Http\Server->run(Object(Cake\Http\ServerRequest))
+#13 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(485): Cake\TestSuite\MiddlewareDispatcher->execute(Array)
+#14 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\TestSuite\IntegrationTestCase.php(373): Cake\TestSuite\IntegrationTestCase->_sendRequest('/task', 'GET')
+#15 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\tests\TestCase\Controller\TasksControllerTest.php(71): Cake\TestSuite\IntegrationTestCase->get('/task')
+#16 [internal function]: App\Test\TestCase\Controller\TasksControllerTest->testView()
+#17 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\Framework\TestCase.php(1071): ReflectionMethod->invokeArgs(Object(App\Test\TestCase\Controller\TasksControllerTest), Array)
+#18 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\Framework\TestCase.php(939): PHPUnit\Framework\TestCase->runTest()
+#19 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\Framework\TestResult.php(698): PHPUnit\Framework\TestCase->runBare()
+#20 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\TasksControllerTest))
+#21 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#22 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(546): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#23 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#24 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#25 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#26 {main}
+
+
+2018-05-09 14:38:52 Error: [UnexpectedValueException] Referenced fixture class "App\Test\Fixture\AdminFixture" not found. Fixture "app.admin" was referenced in test case "App\Test\TestCase\Controller\AdminControllerTest". in D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 229
+Stack Trace:
+#0 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(104): Cake\TestSuite\Fixture\FixtureManager->_loadFixtures(Object(App\Test\TestCase\Controller\AdminControllerTest))
+#1 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(97): Cake\TestSuite\Fixture\FixtureManager->fixturize(Object(App\Test\TestCase\Controller\AdminControllerTest))
+#2 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\Framework\TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Controller\AdminControllerTest))
+#3 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\Framework\TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Controller\AdminControllerTest))
+#4 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\AdminControllerTest))
+#5 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#6 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#7 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(546): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#8 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#9 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#10 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#11 {main}
+
+
+2018-05-09 14:39:16 Error: [UnexpectedValueException] Referenced fixture class "App\Test\Fixture\AdminFixture" not found. Fixture "app.admin" was referenced in test case "App\Test\TestCase\Controller\AdminControllerTest". in D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php on line 229
+Stack Trace:
+#0 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(104): Cake\TestSuite\Fixture\FixtureManager->_loadFixtures(Object(App\Test\TestCase\Controller\AdminControllerTest))
+#1 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureInjector.php(97): Cake\TestSuite\Fixture\FixtureManager->fixturize(Object(App\Test\TestCase\Controller\AdminControllerTest))
+#2 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\Framework\TestResult.php(395): Cake\TestSuite\Fixture\FixtureInjector->startTest(Object(App\Test\TestCase\Controller\AdminControllerTest))
+#3 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\Framework\TestResult.php(637): PHPUnit\Framework\TestResult->startTest(Object(App\Test\TestCase\Controller\AdminControllerTest))
+#4 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\Framework\TestCase.php(894): PHPUnit\Framework\TestResult->run(Object(App\Test\TestCase\Controller\AdminControllerTest))
+#5 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestCase->run(Object(PHPUnit\Framework\TestResult))
+#6 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\Framework\TestSuite.php(755): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#7 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\TextUI\TestRunner.php(546): PHPUnit\Framework\TestSuite->run(Object(PHPUnit\Framework\TestResult))
+#8 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\TextUI\Command.php(195): PHPUnit\TextUI\TestRunner->doRun(Object(PHPUnit\Framework\TestSuite), Array, true)
+#9 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\src\TextUI\Command.php(148): PHPUnit\TextUI\Command->run(Array, true)
+#10 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\phpunit\phpunit\phpunit(53): PHPUnit\TextUI\Command::main()
+#11 {main}
+
+
+2018-05-09 15:27:17 Error: Fatal Error (256): Your PHPUnit Version must be at least 5.7.0 to use CakePHP Testsuite, found 3.7.21 in [D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\tests\phpunit_aliases.php, line 4]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 133
+require_once - CORE\tests\phpunit_aliases.php, line 4
+loadPHPUnitAliases - CORE\src\basics.php, line 155
+include - CORE\src\TestSuite\Fixture\FixtureManager.php, line 17
+Composer\Autoload\includeFile - ROOT\vendor\composer\ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() - ROOT\vendor\composer\ClassLoader.php, line 322
+spl_autoload_call - [internal], line ??
+PHPUnit_Util_XML::xmlToVariable() - D:\xampp\php\pear\PHPUnit\Util\XML.php, line 265
+PHPUnit_Util_Configuration::getListenerConfiguration() - D:\xampp\php\pear\PHPUnit\Util\Configuration.php, line 369
+PHPUnit_TextUI_TestRunner::handleConfiguration() - D:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php, line 621
+PHPUnit_TextUI_TestRunner::doRun() - D:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php, line 139
+PHPUnit_TextUI_Command::run() - D:\xampp\php\pear\PHPUnit\TextUI\Command.php, line 176
+PHPUnit_TextUI_Command::main() - D:\xampp\php\pear\PHPUnit\TextUI\Command.php, line 129
+[main] - D:\xampp\php\phpunit, line 46
+
+
+
+2018-05-09 15:27:17 Error: [Cake\Error\FatalErrorException] Your PHPUnit Version must be at least 5.7.0 to use CakePHP Testsuite, found 3.7.21 in D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\tests\phpunit_aliases.php on line 4
+Stack Trace:
+#0 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(133): Cake\Error\BaseErrorHandler->handleFatalError(256, 'Your PHPUnit Ve...', 'D:\\xampp\\htdocs...', 4)
+#1 [internal function]: Cake\Error\BaseErrorHandler->handleError(256, 'Your PHPUnit Ve...', 'D:\\xampp\\htdocs...', 4, Array)
+#2 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\tests\phpunit_aliases.php(4): trigger_error('Your PHPUnit Ve...', 256)
+#3 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\basics.php(155): require_once('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(17): loadPHPUnitAliases()
+#5 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\composer\ClassLoader.php(444): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('D:\\xampp\\htdocs...')
+#7 [internal function]: Composer\Autoload\ClassLoader->loadClass('Cake\\TestSuite\\...')
+#8 D:\xampp\php\pear\PHPUnit\Util\XML.php(265): spl_autoload_call('Cake\\TestSuite\\...')
+#9 D:\xampp\php\pear\PHPUnit\Util\Configuration.php(369): PHPUnit_Util_XML::xmlToVariable(Object(DOMElement))
+#10 D:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php(621): PHPUnit_Util_Configuration->getListenerConfiguration()
+#11 D:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php(139): PHPUnit_TextUI_TestRunner->handleConfiguration(Array)
+#12 D:\xampp\php\pear\PHPUnit\TextUI\Command.php(176): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#13 D:\xampp\php\pear\PHPUnit\TextUI\Command.php(129): PHPUnit_TextUI_Command->run(Array, true)
+#14 D:\xampp\php\phpunit(46): PHPUnit_TextUI_Command::main()
+#15 {main}
+
+
+2018-05-09 15:35:04 Error: Fatal Error (256): Your PHPUnit Version must be at least 5.7.0 to use CakePHP Testsuite, found 3.7.21 in [D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\tests\phpunit_aliases.php, line 4]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 133
+require_once - CORE\tests\phpunit_aliases.php, line 4
+loadPHPUnitAliases - CORE\src\basics.php, line 155
+include - CORE\src\TestSuite\Fixture\FixtureManager.php, line 17
+Composer\Autoload\includeFile - ROOT\vendor\composer\ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() - ROOT\vendor\composer\ClassLoader.php, line 322
+spl_autoload_call - [internal], line ??
+PHPUnit_Util_XML::xmlToVariable() - D:\xampp\php\pear\PHPUnit\Util\XML.php, line 265
+PHPUnit_Util_Configuration::getListenerConfiguration() - D:\xampp\php\pear\PHPUnit\Util\Configuration.php, line 369
+PHPUnit_TextUI_TestRunner::handleConfiguration() - D:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php, line 621
+PHPUnit_TextUI_TestRunner::doRun() - D:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php, line 139
+PHPUnit_TextUI_Command::run() - D:\xampp\php\pear\PHPUnit\TextUI\Command.php, line 176
+PHPUnit_TextUI_Command::main() - D:\xampp\php\pear\PHPUnit\TextUI\Command.php, line 129
+[main] - D:\xampp\php\phpunit, line 46
+
+
+
+2018-05-09 15:35:04 Error: [Cake\Error\FatalErrorException] Your PHPUnit Version must be at least 5.7.0 to use CakePHP Testsuite, found 3.7.21 in D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\tests\phpunit_aliases.php on line 4
+Stack Trace:
+#0 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(133): Cake\Error\BaseErrorHandler->handleFatalError(256, 'Your PHPUnit Ve...', 'D:\\xampp\\htdocs...', 4)
+#1 [internal function]: Cake\Error\BaseErrorHandler->handleError(256, 'Your PHPUnit Ve...', 'D:\\xampp\\htdocs...', 4, Array)
+#2 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\tests\phpunit_aliases.php(4): trigger_error('Your PHPUnit Ve...', 256)
+#3 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\basics.php(155): require_once('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(17): loadPHPUnitAliases()
+#5 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\composer\ClassLoader.php(444): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('D:\\xampp\\htdocs...')
+#7 [internal function]: Composer\Autoload\ClassLoader->loadClass('Cake\\TestSuite\\...')
+#8 D:\xampp\php\pear\PHPUnit\Util\XML.php(265): spl_autoload_call('Cake\\TestSuite\\...')
+#9 D:\xampp\php\pear\PHPUnit\Util\Configuration.php(369): PHPUnit_Util_XML::xmlToVariable(Object(DOMElement))
+#10 D:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php(621): PHPUnit_Util_Configuration->getListenerConfiguration()
+#11 D:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php(139): PHPUnit_TextUI_TestRunner->handleConfiguration(Array)
+#12 D:\xampp\php\pear\PHPUnit\TextUI\Command.php(176): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#13 D:\xampp\php\pear\PHPUnit\TextUI\Command.php(129): PHPUnit_TextUI_Command->run(Array, true)
+#14 D:\xampp\php\phpunit(46): PHPUnit_TextUI_Command::main()
+#15 {main}
+
+
+2018-05-09 15:35:20 Error: Fatal Error (256): Your PHPUnit Version must be at least 5.7.0 to use CakePHP Testsuite, found 3.7.21 in [D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\tests\phpunit_aliases.php, line 4]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 133
+require_once - CORE\tests\phpunit_aliases.php, line 4
+loadPHPUnitAliases - CORE\src\basics.php, line 155
+include - CORE\src\TestSuite\Fixture\FixtureManager.php, line 17
+Composer\Autoload\includeFile - ROOT\vendor\composer\ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() - ROOT\vendor\composer\ClassLoader.php, line 322
+spl_autoload_call - [internal], line ??
+PHPUnit_Util_XML::xmlToVariable() - D:\xampp\php\pear\PHPUnit\Util\XML.php, line 265
+PHPUnit_Util_Configuration::getListenerConfiguration() - D:\xampp\php\pear\PHPUnit\Util\Configuration.php, line 369
+PHPUnit_TextUI_TestRunner::handleConfiguration() - D:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php, line 621
+PHPUnit_TextUI_TestRunner::doRun() - D:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php, line 139
+PHPUnit_TextUI_Command::run() - D:\xampp\php\pear\PHPUnit\TextUI\Command.php, line 176
+PHPUnit_TextUI_Command::main() - D:\xampp\php\pear\PHPUnit\TextUI\Command.php, line 129
+[main] - D:\xampp\php\phpunit, line 46
+
+
+
+2018-05-09 15:35:20 Error: [Cake\Error\FatalErrorException] Your PHPUnit Version must be at least 5.7.0 to use CakePHP Testsuite, found 3.7.21 in D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\tests\phpunit_aliases.php on line 4
+Stack Trace:
+#0 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(133): Cake\Error\BaseErrorHandler->handleFatalError(256, 'Your PHPUnit Ve...', 'D:\\xampp\\htdocs...', 4)
+#1 [internal function]: Cake\Error\BaseErrorHandler->handleError(256, 'Your PHPUnit Ve...', 'D:\\xampp\\htdocs...', 4, Array)
+#2 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\tests\phpunit_aliases.php(4): trigger_error('Your PHPUnit Ve...', 256)
+#3 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\basics.php(155): require_once('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(17): loadPHPUnitAliases()
+#5 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\composer\ClassLoader.php(444): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('D:\\xampp\\htdocs...')
+#7 [internal function]: Composer\Autoload\ClassLoader->loadClass('Cake\\TestSuite\\...')
+#8 D:\xampp\php\pear\PHPUnit\Util\XML.php(265): spl_autoload_call('Cake\\TestSuite\\...')
+#9 D:\xampp\php\pear\PHPUnit\Util\Configuration.php(369): PHPUnit_Util_XML::xmlToVariable(Object(DOMElement))
+#10 D:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php(621): PHPUnit_Util_Configuration->getListenerConfiguration()
+#11 D:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php(139): PHPUnit_TextUI_TestRunner->handleConfiguration(Array)
+#12 D:\xampp\php\pear\PHPUnit\TextUI\Command.php(176): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#13 D:\xampp\php\pear\PHPUnit\TextUI\Command.php(129): PHPUnit_TextUI_Command->run(Array, true)
+#14 D:\xampp\php\phpunit(46): PHPUnit_TextUI_Command::main()
+#15 {main}
+
+
+2018-05-09 15:51:41 Error: Fatal Error (256): Your PHPUnit Version must be at least 5.7.0 to use CakePHP Testsuite, found 3.7.21 in [D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\tests\phpunit_aliases.php, line 4]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 133
+require_once - CORE\tests\phpunit_aliases.php, line 4
+loadPHPUnitAliases - CORE\src\basics.php, line 155
+include - CORE\src\TestSuite\Fixture\FixtureManager.php, line 17
+Composer\Autoload\includeFile - ROOT\vendor\composer\ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() - ROOT\vendor\composer\ClassLoader.php, line 322
+spl_autoload_call - [internal], line ??
+PHPUnit_Util_XML::xmlToVariable() - D:\xampp\php\pear\PHPUnit\Util\XML.php, line 265
+PHPUnit_Util_Configuration::getListenerConfiguration() - D:\xampp\php\pear\PHPUnit\Util\Configuration.php, line 369
+PHPUnit_TextUI_TestRunner::handleConfiguration() - D:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php, line 621
+PHPUnit_TextUI_TestRunner::doRun() - D:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php, line 139
+PHPUnit_TextUI_Command::run() - D:\xampp\php\pear\PHPUnit\TextUI\Command.php, line 176
+PHPUnit_TextUI_Command::main() - D:\xampp\php\pear\PHPUnit\TextUI\Command.php, line 129
+[main] - D:\xampp\php\phpunit, line 46
+
+
+
+2018-05-09 15:51:41 Error: [Cake\Error\FatalErrorException] Your PHPUnit Version must be at least 5.7.0 to use CakePHP Testsuite, found 3.7.21 in D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\tests\phpunit_aliases.php on line 4
+Stack Trace:
+#0 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(133): Cake\Error\BaseErrorHandler->handleFatalError(256, 'Your PHPUnit Ve...', 'D:\\xampp\\htdocs...', 4)
+#1 [internal function]: Cake\Error\BaseErrorHandler->handleError(256, 'Your PHPUnit Ve...', 'D:\\xampp\\htdocs...', 4, Array)
+#2 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\tests\phpunit_aliases.php(4): trigger_error('Your PHPUnit Ve...', 256)
+#3 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\basics.php(155): require_once('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(17): loadPHPUnitAliases()
+#5 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\composer\ClassLoader.php(444): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('D:\\xampp\\htdocs...')
+#7 [internal function]: Composer\Autoload\ClassLoader->loadClass('Cake\\TestSuite\\...')
+#8 D:\xampp\php\pear\PHPUnit\Util\XML.php(265): spl_autoload_call('Cake\\TestSuite\\...')
+#9 D:\xampp\php\pear\PHPUnit\Util\Configuration.php(369): PHPUnit_Util_XML::xmlToVariable(Object(DOMElement))
+#10 D:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php(621): PHPUnit_Util_Configuration->getListenerConfiguration()
+#11 D:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php(139): PHPUnit_TextUI_TestRunner->handleConfiguration(Array)
+#12 D:\xampp\php\pear\PHPUnit\TextUI\Command.php(176): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#13 D:\xampp\php\pear\PHPUnit\TextUI\Command.php(129): PHPUnit_TextUI_Command->run(Array, true)
+#14 D:\xampp\php\phpunit(46): PHPUnit_TextUI_Command::main()
+#15 {main}
+
+
+2018-05-09 15:53:00 Error: Fatal Error (256): Your PHPUnit Version must be at least 5.7.0 to use CakePHP Testsuite, found 3.7.21 in [D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\tests\phpunit_aliases.php, line 4]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 133
+require_once - CORE\tests\phpunit_aliases.php, line 4
+loadPHPUnitAliases - CORE\src\basics.php, line 155
+include - CORE\src\TestSuite\Fixture\FixtureManager.php, line 17
+Composer\Autoload\includeFile - ROOT\vendor\composer\ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() - ROOT\vendor\composer\ClassLoader.php, line 322
+spl_autoload_call - [internal], line ??
+PHPUnit_Util_XML::xmlToVariable() - D:\xampp\php\pear\PHPUnit\Util\XML.php, line 265
+PHPUnit_Util_Configuration::getListenerConfiguration() - D:\xampp\php\pear\PHPUnit\Util\Configuration.php, line 369
+PHPUnit_TextUI_TestRunner::handleConfiguration() - D:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php, line 621
+PHPUnit_TextUI_TestRunner::doRun() - D:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php, line 139
+PHPUnit_TextUI_Command::run() - D:\xampp\php\pear\PHPUnit\TextUI\Command.php, line 176
+PHPUnit_TextUI_Command::main() - D:\xampp\php\pear\PHPUnit\TextUI\Command.php, line 129
+[main] - D:\xampp\php\phpunit, line 46
+
+
+
+2018-05-09 15:53:00 Error: [Cake\Error\FatalErrorException] Your PHPUnit Version must be at least 5.7.0 to use CakePHP Testsuite, found 3.7.21 in D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\tests\phpunit_aliases.php on line 4
+Stack Trace:
+#0 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(133): Cake\Error\BaseErrorHandler->handleFatalError(256, 'Your PHPUnit Ve...', 'D:\\xampp\\htdocs...', 4)
+#1 [internal function]: Cake\Error\BaseErrorHandler->handleError(256, 'Your PHPUnit Ve...', 'D:\\xampp\\htdocs...', 4, Array)
+#2 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\tests\phpunit_aliases.php(4): trigger_error('Your PHPUnit Ve...', 256)
+#3 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\basics.php(155): require_once('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\cakephp\cakephp\src\TestSuite\Fixture\FixtureManager.php(17): loadPHPUnitAliases()
+#5 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\composer\ClassLoader.php(444): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\cakeprojects\mscteam09-20172018\website\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('D:\\xampp\\htdocs...')
+#7 [internal function]: Composer\Autoload\ClassLoader->loadClass('Cake\\TestSuite\\...')
+#8 D:\xampp\php\pear\PHPUnit\Util\XML.php(265): spl_autoload_call('Cake\\TestSuite\\...')
+#9 D:\xampp\php\pear\PHPUnit\Util\Configuration.php(369): PHPUnit_Util_XML::xmlToVariable(Object(DOMElement))
+#10 D:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php(621): PHPUnit_Util_Configuration->getListenerConfiguration()
+#11 D:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php(139): PHPUnit_TextUI_TestRunner->handleConfiguration(Array)
+#12 D:\xampp\php\pear\PHPUnit\TextUI\Command.php(176): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#13 D:\xampp\php\pear\PHPUnit\TextUI\Command.php(129): PHPUnit_TextUI_Command->run(Array, true)
+#14 D:\xampp\php\phpunit(46): PHPUnit_TextUI_Command::main()
+#15 {main}
+
+
